@@ -1,12 +1,19 @@
-# React + Vite
+**Table:** todos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+| **Columns:** | **id**                      | int AI PK |
+| ------------ | --------------------------- | --------- |
+| title        | varchar(255)                |
+| due_date     | date                        |
+| category     | varchar(100)                |
+| priority     | enum('Low','Medium','High') |
+| status       | enum('Pending','Completed') |
 
-Currently, two official plugins are available:
+**Table:** users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| **Columns:** | **id**                 | int AI PK |
+| ------------ | ---------------------- | --------- |
+| name         | varchar(100)           |
+| **email**    | varchar(100)           |
+| phone        | varchar(20)            |
+| password     | varchar(100)           |
+| role         | enum('Client','Admin') |
