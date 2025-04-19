@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* UserProfile container */
+.user-profile-container {
+  background: #ffffff;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.user-profile-container:hover {
+  transform: translateY(-8px);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title styling */
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Emphasize the labels */
+p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #e0e7ff;
+  color: #357abd;
+  transform: scale(1.05);
+}
+
+a:active {
+  transform: scale(1);
+  color: #2d65b5;
+}
+
+/* User details section */
+.user-details {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  border: 1px solid #e1e1e1;
+}
+
+/* User details styling */
+.user-details p {
+  margin-bottom: 1rem;
+}
+
+/* User profile picture */
+.user-profile-img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a90e2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-profile-container {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .user-profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* TodoList container */
+.todo-list-container {
+  background: #ffffff;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-list-container:hover {
+  transform: translateY(-8px);
+}
+
+/* Title styling */
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+/* Link styling */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #357abd;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+th {
+  background-color: #4a90e2;
+  color: white;
+  text-transform: uppercase;
+}
+
+td {
+  background-color: #f9fafb;
+  color: #333;
+}
+
+tr:nth-child(even) td {
+  background-color: #f1f5f9;
+}
+
+tr:hover {
+  background-color: #e0e7ff;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+td {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+/* Table Header */
+th {
+  padding: 18px 25px;
+  font-size: 1.2rem;
+}
+
+/* Table Row Styling */
+tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+tr:hover {
+  background-color: #ebf2ff;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+/* Table Responsiveness */
+@media (max-width: 768px) {
+  .todo-list-container {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+/* Border styling for links and table cells */
+a,
+table,
+th,
+td {
+  border-radius: 10px;
+}
+
+a {
+  border: 1px solid #4a90e2;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #f1f5f9;
+  color: #357abd;
+  transform: scale(1.05);
+}
+
+/* Add a shadow effect to table rows on hover */
+tr:hover {
+  background-color: #e0e7ff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Box Styling (Optional: If using for Search or Filtering) */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px 0;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #4a90e2;
+  box-shadow: 0 0 8px rgba(72, 144, 226, 0.5);
+}
